@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Precios - Tecnopoint SG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #365B6D; /* Fondo base oscuro */
+        }
+        .main-container {
+            background: linear-gradient(145deg, #365B6D, #060b0e);
+            color: #D3BD67;
+            min-height: 100vh;
+        }
+        .price { color: #F2F1EC; }
+        .item-row { border-bottom: 1px solid rgba(242, 241, 236, 0.1); }
+        .item-card {
+            background-color: rgba(242, 241, 236, 0.05);
+            border: 1px solid rgba(242, 241, 236, 0.1);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .condition { color: #DDB519; }
+        .brand-title { color: #DDB519; }
+        
+        /* Estilos para la navegación */
+        .nav-button {
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            color: #F2F1EC;
+        }
+        .nav-button.active {
+            color: #DDB519;
+            border-bottom-color: #DDB519;
+        }
+        .nav-button:not(.active):hover {
+            background-color: rgba(242, 241, 236, 0.1);
+        }
+    </style>
+</head>
+<body class="main-container">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+        <!-- 1. Encabezado -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-wider text-white">¡Bienvenidos a TecnoPoint SG! 🚀</h1>
+            <p class="text-md text-blue-300 mt-2">Los mejores precios en tecnología, con garantía y confianza.</p>
+            <div class="mt-4 text-xs md:text-sm text-gray-300 space-y-1">
+                <p>▪️ ENTREGA INMEDIATA</p>
+                <p>▪️ GARANTÍA OFICIAL EN EQUIPOS NUEVOS</p>
+                <p>▪️ CONSULTAR POR COLORES DISPONIBLES</p>
+            </div>
+        </header>
+
+        <!-- 2. Menú de Navegación -->
+        <nav class="flex justify-center flex-wrap gap-2 md:gap-4 mb-8 border-b border-[#F2F1EC] pb-4">
+            <button class="nav-button active text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="apple-new">🍎 iPhones Nuevos</button>
+            <button class="nav-button text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="apple-selected">🍏 iPhones Seleccionados</button>
+            <button class="nav-button active text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="ipads">🍎 iPads</button>
+            <button class="nav-button active text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="apple-acc">🎧 Accesorios Apple</button>
+            <button class="nav-button text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="androids">📱 Androids</button>
+            <button class="nav-button text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="notebooks">💻 Notebooks Gamer</button>
+            <button class="nav-button text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="study">🖥️ Notebooks</button>
+            <button class="nav-button text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="consoles">🎮 Consolas</button>
+            <button class="nav-button text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="specials">💎 Celulares Especiales</button>
+            <button class="nav-button text-sm md:text-base font-semibold px-4 py-2 rounded-t-lg" data-target="smart-tvs">📺 Smart TVs</button>
+            
+        </nav>
+
+        <!-- 3. Contenido de las Listas de Precios -->
+        <main>
+            <!-- SECCIÓN IPHONES NUEVOS -->
+            <section id="apple-new" class="price-section">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">🍎 Apple iPhone (Nuevos Sellados)</h2>
+                 <div class="max-w-xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col">
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 11 64GB</span><span class="font-bold price">$435</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE SE 3 64GB</span><span class="font-bold price">$505</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 13 128GB</span><span class="font-bold price">$585</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 14 128GB</span><span class="font-bold price">$655</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 14 512GB</span><span class="font-bold price">$785</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 14 PLUS 128GB</span><span class="font-bold price">$755</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 15 128GB</span><span class="font-bold price">$735</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 15 256GB</span><span class="font-bold price">$895</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 15 PLUS 256GB</span><span class="font-bold price">$920</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 15 PRO MAX 1TB</span><span class="font-bold price">$1.270</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16E 128GB</span><span class="font-bold price">$670</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16E 256GB</span><span class="font-bold price">$735</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 128GB</span><span class="font-bold price">$830</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 256GB</span><span class="font-bold price">$970</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PLUS 128GB</span><span class="font-bold price">$940</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PLUS 256GB</span><span class="font-bold price">$1.040</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PRO 128GB</span><span class="font-bold price">$1.065</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PRO 256GB</span><span class="font-bold price">$1.195</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PRO 512GB</span><span class="font-bold price">$1.440</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PRO MAX 256GB</span><span class="font-bold price">$1.240</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PRO MAX 512GB</span><span class="font-bold price">$1.470</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 16 PRO MAX 1TB</span><span class="font-bold price">$1.610</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 256GB</span><span class="font-bold price">$1.140</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 AIR 256GB</span><span class="font-bold price">$1.120</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 AIR 512GB</span><span class="font-bold price">$1.440</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 AIR 1TB</span><span class="font-bold price">$1.750</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 PRO 256GB</span><span class="font-bold price">$1.420</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 PRO 512GB</span><span class="font-bold price">$1.620</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 PRO 1TB</span><span class="font-bold price">$1.770</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 PRO MAX 256GB</span><span class="font-bold price">$1.660</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 PRO MAX 512GB</span><span class="font-bold price">$1.790</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>APPLE IPHONE 17 PRO MAX 1TB</span><span class="font-bold price">$2.115</span></div>
+</div>
+
+                 </div>
+                <div class="text-center text-xs text-[#D3BD67] mt-4"><p>Modelos disponibles para encargo - ¡Consulta!</p></div>
+            </section>
+            <!-- SECCIÓN IPADS -->
+              <section id="ipads" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">🍎 Ipads (Nuevas Selladas)</h2>
+                <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col space-y-3">
+                        
+                               <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad AIR/PRO M2 128GB <b class="condition">(Purple)</b></span>
+                <span class="font-bold price">$630</span>
+            </div>
+
+                        <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad AIR M2 12.9” 256GB <b class="condition">(Star)</b></span>
+                <span class="font-bold price">$730</span>
+            </div>
+
+            <!-- IPAD AIR M3 -->
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad AIR M3 11” 128GB <b class="condition">(Star - Blue - Purple)</b></span>
+                <span class="font-bold price">$700</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad AIR M3 11” 256GB <b class="condition">(Blue)</b></span>
+                <span class="font-bold price">$800</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad AIR M3 13” 128GB <b class="condition">(Space - Star - Blue - Purple)</b></span>
+                <span class="font-bold price">$890</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad AIR M3 13” 256GB <b class="condition">(Space)</b></span>
+                <span class="font-bold price">$985</span>
+            </div>
+
+            <!-- IPAD PRO M4 -->
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad PRO M4 11” 256GB <b class="condition">(Space - Silver)</b></span>
+                <span class="font-bold price">$1.060</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad PRO M4 11” 512GB <b class="condition">(Space)</b></span>
+                <span class="font-bold price">$1.455</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad PRO M4 12.9” 256GB <b class="condition">(Space - Silver)</b></span>
+                <span class="font-bold price">$1.435</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad PRO M4 12.9” 512GB <b class="condition">(Space)</b></span>
+                <span class="font-bold price">$1.660</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad PRO M4 12.9” 1TB <b class="condition">(Space - Silver)</b></span>
+                <span class="font-bold price">$2.285</span>
+            </div>
+
+            <!-- IPAD MINI / A16 / 7ma / 9na / 10ma -->
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad A16 128GB <b class="condition">(Blue - Pink)</b></span>
+                <span class="font-bold price">$510</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad A16 256GB <b class="condition">(Silver - Blue - Yellow)</b></span>
+                <span class="font-bold price">$600</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad 7ma 128GB <b class="condition">(Space)</b></span>
+                <span class="font-bold price">$620</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad 7ma 256GB <b class="condition">(Space)</b></span>
+                <span class="font-bold price">$720</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad 9na 64GB <b class="condition">(Space)</b></span>
+                <span class="font-bold price">$465</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>iPad 10ma 64GB + CELL <b class="condition">(Silver)</b></span>
+                <span class="font-bold price">$590</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+            <!--SECCIÓN ACCESORIOS APPLE-->
+            <section id="apple-acc" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">🎧 Accesorios Apple</h2>
+                <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col space-y-3">
+
+                         <div class="flex justify-between items-center py-2 item-row">
+                <span>Apple Pencil 2nd Gen</span>
+                <span class="font-bold price">$930</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Apple Pencil USB-C</span>
+                <span class="font-bold price">$240</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Apple Pencil Pro</span>
+                <span class="font-bold price">$265</span>
+            </div>
+
+            <!-- Magic Mouse -->
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Magic Mouse</span>
+                <span class="font-bold price">$250</span>
+            </div>
+
+            <!-- Magic Keyboards -->
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Magic Keyboard AIR M3 11”</span>
+                <span class="font-bold price">$490</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Magic Keyboard AIR M3 13”</span>
+                <span class="font-bold price">$560</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Magic Keyboard A16</span>
+                <span class="font-bold price">$450</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Magic Keyboard PRO M4 11”</span>
+                <span class="font-bold price">$480</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>Magic Keyboard PRO M4 12.9”</span>
+                <span class="font-bold price">$530</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+            <!-- SECCIÓN IPHONES SELECCIONADOS -->
+            <section id="apple-selected" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">🍏 Apple iPhone Seleccionados (Tester/Exhibición)</h2>
+                <p class="text-center text-[#F2F1EC] mb-6 max-w-2xl mx-auto">¡La mejor relación precio-calidad del mercado! Equipos impecables con batería certificada.</p>
+                <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col space-y-3">
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 11 128GB <b class="condition">(Purple - Red)</b></span>
+        <span class="font-bold price">$405</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 12 128GB <b class="condition">(Black - White)</b></span>
+        <span class="font-bold price">$420</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 12 Pro 128GB <b class="condition">(Black - Silver)</b></span>
+        <span class="font-bold price">$480</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 13 128GB <b class="condition">(Mid - Star - Pink)</b></span>
+        <span class="font-bold price">$495</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 13 Pro 128GB <b class="condition">(Graf - Blue - Gold)</b></span>
+        <span class="font-bold price">$605</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 13 Pro Max 128GB <b class="condition">(Graf - Blue - Gold)</b></span>
+        <span class="font-bold price">$655</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 14 128GB <b class="condition">(Mid - Star)</b></span>
+        <span class="font-bold price">$535</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 14 Pro 128GB <b class="condition">(Black - Purple)</b></span>
+        <span class="font-bold price">$705</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 14 Pro Max 128GB <b class="condition">(Black - Purple)</b></span>
+        <span class="font-bold price">$785</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 15 128GB <b class="condition">(Black)</b></span>
+        <span class="font-bold price">$655</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 16 128GB <b class="condition">(Black - White - Ultra Marine)</b></span>
+        <span class="font-bold price">$785</span>
+    </div>
+    <div class="flex justify-between items-center py-2 item-row">
+        <span>iPhone 16 Pro Max 512GB <b class="condition">(White)</b></span>
+        <span class="font-bold price">$1.205</span>
+    </div>
+</div>
+                </div>
+                 <div class="text-center text-sm text-yellow-300 mt-6 bg-black bg-opacity-20 p-3 rounded-lg max-w-md mx-auto">
+                    <p>¿Necesitas Cable/Cargador? ¡Consúltanos por combos originales y AAA!</p>
+                </div>
+            </section>
+            
+<!--SECCIÓN ESPECIALES-->
+<section id="specials" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">💎 Celulares Especiales</h2>
+                <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col space-y-3">
+
+                        <!-- REALME -->
+    <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg mb-6 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+        <h3 class="text-2xl font-semibold text-center text-white mb-4">REALME</h3>
+        <div class="flex flex-col space-y-3">
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>C75X NFC 256GB/8 RAM <b class="condition">(PINK/BLUE)</b></span>
+                <span class="font-bold price">U$S310</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>NOTE 50 256GB/4RAM <b class="condition">(BLUE/BLACK)</b></span>
+                <span class="font-bold price">U$S275</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>NOTE 60 256GB/4RAM <b class="condition">(BLACK)</b></span>
+                <span class="font-bold price">U$S265</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>NOTE 60X 64GB/3RAM <b class="condition">(BLACK/SAFARI GREEN)</b></span>
+                <span class="font-bold price">U$S220</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>NOTE 60S 128GB/4RAM <b class="condition">(BLACK/SAFARI GREEN)</b></span>
+                <span class="font-bold price">U$S240</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>C67 (NFC) 256GB/8RAM <b class="condition">(BLACK ROCK)</b></span>
+                <span class="font-bold price">U$S325</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>C71 5G (NFC) 128GB/6 RAM <b class="condition">(BLACK/GREEN)</b></span>
+                <span class="font-bold price">U$S300</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>11 5G 256GB/8 RAM <b class="condition">(BLACK/GOLD)</b></span>
+                <span class="font-bold price">U$S370</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>12 PRO PLUS 5G 512GB/12 RAM <b class="condition">(BLUE)</b></span>
+                <span class="font-bold price">U$S500</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>14 PRO 5G 256GB/12 RAM <b class="condition">(SUEDE GREY)</b></span>
+                <span class="font-bold price">U$S475</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>14T 5G 256GB/8 RAM <b class="condition">(PURPLE)</b></span>
+                <span class="font-bold price">U$S390</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>14 PRO PLUS 5G 256GB/12 RAM <b class="condition">(PEARL WHITE/SUEDE GREY)</b></span>
+                <span class="font-bold price">U$S495</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>14 PRO PLUS 5G 512GB/12 RAM <b class="condition">(WHITE/GREY)</b></span>
+                <span class="font-bold price">U$S570</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>GT6 5G AI 256GB/12GB RAM <b class="condition">(SILVER)</b></span>
+                <span class="font-bold price">U$S695</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>GT7 PRO 5G AI 512GB/12GB RAM <b class="condition">(GALAXY GRAY)</b></span>
+                <span class="font-bold price">U$S960</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NUBIA -->
+    <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg mb-6 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+        <h3 class="text-2xl font-semibold text-center text-white mb-4">NUBIA</h3>
+        <div class="flex flex-col space-y-3">
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>NEO 2 5G 8/256GB</span>
+                <span class="font-bold price">U$S370</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>NEO 3 16/256GB</span>
+                <span class="font-bold price">U$S395</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>FOCUS PRO 5G 8/256GB</span>
+                <span class="font-bold price">U$S400</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TECNO -->
+    <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg mb-6 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+        <h3 class="text-2xl font-semibold text-center text-white mb-4">TECNO</h3>
+        <div class="flex flex-col space-y-3">
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>POVA 7 256GB/8RAM+8 RAM <b class="condition">(SILVER/HYPER TITANIUM)</b></span>
+                <span class="font-bold price">U$S375</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>SPARK 30C KL5 256GB/8+8 RAM <b class="condition">(GREEN/WHITE)</b></span>
+                <span class="font-bold price">U$S270</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>SPARK 20 PRO PLUS NFC 256GB/8GB+8GB RAM <b class="condition">(GREEN)</b></span>
+                <span class="font-bold price">U$S370</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>SPARK 20C 128GB/4GB+4GB RAM <b class="condition">(GREEN)</b></span>
+                <span class="font-bold price">U$S330</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>CAMON 30 TECNO NFC + TECNO BUDS 3 GRATIS 256GB/8GB+8GB RAM <b class="condition">(BASALTIC DARK)</b></span>
+                <span class="font-bold price">U$S380</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>CAMON 30S TECNO AI 256GB/8GB+8GB RAM <b class="condition">(GOLD)</b></span>
+                <span class="font-bold price">U$S350</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>CAMON 30S PRO TECNO AI 256GB/8GB+8GB RAM <b class="condition">(GREEN)</b></span>
+                <span class="font-bold price">U$S390</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFINIX -->
+    <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg mb-6 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+        <h3 class="text-2xl font-semibold text-center text-white mb-4">INFINIX</h3>
+        <div class="flex flex-col space-y-3">
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>SMART 9 64GB/6 RAM PANTALLA 6,7"</span>
+                <span class="font-bold price">U$S190</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>SMART 9 128GB/4 RAM PANTALLA 6,7" <b class="condition">(BLACK/MINT/NEO TITANIUM)</b></span>
+                <span class="font-bold price">U$S225</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>SMART 10 128GB/4 RAM PANTALLA 6,6" <b class="condition">(BLACK/SILVER/GOLD)</b></span>
+                <span class="font-bold price">U$S230</span>
+            </div>
+          <div class="flex justify-between items-center py-2 item-row">
+    <span>HOT 60I 256GB/4 RAM + 4 RAM <b class="condition">(BLACK/SILVER)</b></span>
+    <span class="font-bold price">U$S255</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>HOT 60I 256GB/8 RAM + 8 RAM <b class="condition">(BLACK/SILVER)</b></span>
+    <span class="font-bold price">U$S275</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>HOT 60 PRO PLUS 256GB/8 RAM + 8 RAM <b class="condition">(BLACK/MISTY VIOLET)</b></span>
+    <span class="font-bold price">U$S355</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>HOT 50 256GB/8 RAM + 8 RAM <b class="condition">(SLEEK BLACK/GREEN/GREY)</b></span>
+    <span class="font-bold price">U$S300</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>HOT 50 PRO 256GB/8 RAM + 8 RAM <b class="condition">(BLACK/BLUE/GREY) + AURICULAR DE REGALO</b></span>
+    <span class="font-bold price">U$S340</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>HOT 50 PRO PLUS 256GB/8 RAM + 8 RAM <b class="condition">(BLACK/BLUE/PURPLE)</b></span>
+    <span class="font-bold price">U$S355</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>NOTE 40 PRO NFC 256GB/8+8 RAM <b class="condition">(BLACK)</b></span>
+    <span class="font-bold price">U$S415</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>NOTE 40 5G 256GB/8+8 RAM <b class="condition">(BLACK)</b></span>
+    <span class="font-bold price">U$S365</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>NOTE 50X 5G+ NFC 256GB/8+8 RAM <b class="condition">(PURPLE)</b></span>
+    <span class="font-bold price">U$S380</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>NOTE 50 PRO NFC 256GB/8+8 RAM <b class="condition">(SHADOW BLACK/TITANIUM GREY/ENCHANTED PURPLE/RACING EDITION) + CARGADOR INALÁMBRICO + AURICULAR DE REGALO</b></span>
+    <span class="font-bold price">U$S415</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>NOTE 50 PRO NFC 256GB/12+12 RAM <b class="condition">(PURPLE CARGADOR INALÁMBRICO) + AURICULAR DE REGALO</b></span>
+    <span class="font-bold price">U$S435</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>NOTE 50 NFC 256GB/8+8 RAM <b class="condition">(MOUNTAIN SHADE/BURGUNDI RED/SHADOW BLACK) + CARGADOR INALÁMBRICO</b></span>
+    <span class="font-bold price">U$S410</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>ZERO 40 NFC 512GB/8+8 RAM <b class="condition">(MISTY AQUA/BLACK)</b></span>
+    <span class="font-bold price">U$S445</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>GT 20 PRO 256GB/12+12 RAM <b class="condition">(MECHA BLUE)</b></span>
+    <span class="font-bold price">U$S515</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>GT 30 PRO 256GB/12+12 RAM <b class="condition">(SHADOW ASH/BLADE WHITE)</b></span>
+    <span class="font-bold price">U$S555</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>GT 30 PRO 256GB/12+12 RAM + KIT GAMMER COLLER <b class="condition">(DARK FLARE)</b></span>
+    <span class="font-bold price">U$S580</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>GT 30 PRO 512GB/12+12 RAM <b class="condition">(SHADOW ASH/BLADE WHITE)</b></span>
+    <span class="font-bold price">U$S585</span>
+</div>
+<div class="flex justify-between items-center py-2 item-row">
+    <span>GT 30 PRO 512GB/12+12 RAM + KIT GAMMER COLLER <b class="condition">(DARK FLARE)</b></span>
+    <span class="font-bold price">U$S605</span>
+</div>
+
+        </div>
+    </div>
+
+    <!-- HONOR -->
+    <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg mb-6 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+        <h3 class="text-2xl font-semibold text-center text-white mb-4">HONOR</h3>
+        <div class="flex flex-col space-y-3">
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>MAGIC 7 LITE 5G 256GB/12RAM TITANIO <b class="condition">(BLACK/TITANIO MORADO)</b></span>
+                <span class="font-bold price">U$S470</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>MAGIC 7 LITE 5G 512GB/12RAM <b class="condition">(BLACK/PURPLE)</b></span>
+                <span class="font-bold price">U$S500</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- OPPO -->
+    <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg mb-6 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+        <h3 class="text-2xl font-semibold text-center text-white mb-4">OPPO</h3>
+        <div class="flex flex-col space-y-3">
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>A40 256GB/4RAM <b class="condition">(CAFE/PURPURA)</b></span>
+                <span class="font-bold price">U$S275</span>
+            </div>
+            <div class="flex justify-between items-center py-2 item-row">
+                <span>A60 256GB/8RAM <b class="condition">(NEGRO/BLANCO)</b></span>
+                <span class="font-bold price">U$S340</span>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!--SECCIÓN CONSOLAS-->
+ <section id="consoles" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">🎮 Consolas</h2>
+                <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col space-y-3">
+
+                    
+ <!-- PLAYSTATION -->
+        <div>
+            <h3 class="text-xl font-bold text-center text-white mb-4">PLAYSTATION</h3>
+            <div class="bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+
+                <div class="flex justify-between items-center py-2 item-row"><span>PS4 Slim 1TB</span><span class="font-bold text-base price">$520</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS4 Slim 1TB + God of War Bundle</span><span class="font-bold text-base price">$550</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Digital Slim 1TB</span><span class="font-bold text-base price">$620</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Digital Slim 1TB + Astro Bot Bundle</span><span class="font-bold text-base price">$660</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Disc Slim 1TB</span><span class="font-bold text-base price">$680</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Disc Slim 1TB + Fortnite Bundle</span><span class="font-bold text-base price">$655</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Disc Slim 1TB + Ratchet & Clank + Returnal</span><span class="font-bold text-base price">$750</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Disc Slim 1TB + Astro Bot + Gran Turismo 7</span><span class="font-bold text-base price">$770</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Pro Digital 2TB 8K</span><span class="font-bold text-base price">$990</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Portal Remote Player</span><span class="font-bold text-base price">$410</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 Pulse Explore Airbuds</span><span class="font-bold text-base price">$340</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>PS5 VR2 + Horizon Call Of The Mountain</span><span class="font-bold text-base price">$670</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>Volante Logitech G29 (PS5/PC)</span><span class="font-bold text-base price">$510</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>Joystick PS5</span><span class="font-bold text-base price">$185</span></div>
+
+            </div>
+        </div>
+
+        <!-- XBOX -->
+        <div>
+            <h3 class="text-xl font-bold text-center text-white mb-4">XBOX</h3>
+            <div class="bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+
+                <div class="flex justify-between items-center py-2 item-row"><span>XBOX Serie S 512GB</span><span class="font-bold text-base price">$570</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>Joystick XBOX Series X/S</span><span class="font-bold text-base price">$175</span></div>
+
+            </div>
+        </div>
+
+        <!-- NINTENDO -->
+        <div>
+            <h3 class="text-xl font-bold text-center text-white mb-4">NINTENDO</h3>
+            <div class="bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+
+                <div class="flex justify-between items-center py-2 item-row"><span>SWITCH LITE</span><span class="font-bold text-base price">$370</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>SWITCH OLED (Zelda Edition)</span><span class="font-bold text-base price">$570</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>SWITCH 2 256GB</span><span class="font-bold text-base price">$720</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>SWITCH 2 256GB (Mario Kart Edition)</span><span class="font-bold text-base price">$750</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>JOYCON</span><span class="font-bold text-base price">$165</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>JOYCON 2</span><span class="font-bold text-base price">$210</span></div>
+
+            </div>
+        </div>
+
+        <!-- META QUEST -->
+        <div>
+            <h3 class="text-xl font-bold text-center text-white mb-4">META QUEST</h3>
+            <div class="bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+
+                <div class="flex justify-between items-center py-2 item-row"><span>META QUEST 3S 128GB</span><span class="font-bold text-base price">$520</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>META QUEST 3S 128GB (Batman)</span><span class="font-bold text-base price">$560</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>META QUEST 3S 256GB (Batman)</span><span class="font-bold text-base price">$610</span></div>
+                <div class="flex justify-between items-center py-2 item-row"><span>META QUEST 3S 256GB</span><span class="font-bold text-base price">$660</span></div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+             <!-- SECCIÓN ANDROIDS -->
+            <section id="androids" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">📱 Androids (Xiaomi, Samsung y Motorola)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-center text-white mb-4">XIAOMI</h3>
+                        <div class="bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                        
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO C65 4/256GB</span><span class="font-bold text-base price">$270</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO C71 4/128GB</span><span class="font-bold text-base price">$220</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO C75 6/128GB</span><span class="font-bold text-base price">$250</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO C85 8/256GB</span><span class="font-bold text-base price">$290</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO M6 8/256GB</span><span class="font-bold text-base price">$290</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO M7 8/256GB</span><span class="font-bold text-base price">$295</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO M7 Pro (5G) 8/256GB</span><span class="font-bold text-base price">$325</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO M7 Pro (5G) 12/256GB</span><span class="font-bold text-base price">$345</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO M7 Pro (5G) 12/512GB</span><span class="font-bold text-base price">$360</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO X6 (5G) 12/512GB</span><span class="font-bold text-base price">$410</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO X6 Pro (5G) 12/512GB</span><span class="font-bold text-base price">$430</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO X7 (5G) 8/256GB</span><span class="font-bold text-base price">$395</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO X7 (5G) 12/512GB</span><span class="font-bold text-base price">$420</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO X7 Pro (5G) 8/256GB</span><span class="font-bold text-base price">$425</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO X7 Pro (5G) 12/256GB</span><span class="font-bold text-base price">$465</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO X7 Pro (5G) 12/512GB</span><span class="font-bold text-base price">$490</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 12 Pro Plus (5G) 8/256GB</span><span class="font-bold text-base price">$435</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 13 Pro (5G) 8/256GB</span><span class="font-bold text-base price">$415</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 13 Pro (5G) 12/512GB</span><span class="font-bold text-base price">$475</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 13 Pro Plus (5G) 8/256GB</span><span class="font-bold text-base price">$495</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14 6/128GB</span><span class="font-bold text-base price">$290</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14 8/256GB</span><span class="font-bold text-base price">$315</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14 (5G) 8/256GB</span><span class="font-bold text-base price">$370</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14s 8/256GB</span><span class="font-bold text-base price">$365</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14 Pro 8/256GB</span><span class="font-bold text-base price">$365</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14 Pro 12/512GB</span><span class="font-bold text-base price">$395</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14 Pro Plus (5G) 8/256GB</span><span class="font-bold text-base price">$475</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI NOTE 14 Pro Plus (5G) 12/512GB</span><span class="font-bold text-base price">$505</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI 14T (5G) Leica 12/512GB</span><span class="font-bold text-base price">$655</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI 14 ULTRA (5G) Leica 16/512GB</span><span class="font-bold text-base price">$1.050</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO F6 Pro (5G) 12/256GB</span><span class="font-bold text-base price">$580</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO F7 (5G) 12/512GB</span><span class="font-bold text-base price">$580</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO F7 Pro (5G) 12/256GB</span><span class="font-bold text-base price">$605</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO F7 Ultra (5G) 12/256GB</span><span class="font-bold text-base price">$770</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI POCO F7 Ultra (5G) 16/512GB</span><span class="font-bold text-base price">$810</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI 15 (5G) Leica 12/512GB</span><span class="font-bold text-base price">$970</span></div>
+    <div class="flex justify-between items-center py-2 item-row"><span>XIAOMI 15 ULTRA (5G) Leica 16/512GB</span><span class="font-bold text-base price">$1.340</span></div>
+
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-xl font-bold text-center text-white mb-4">SAMSUNG</h3>
+                       <div class="bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+
+  <!-- Serie A -->
+  <div class="flex justify-between items-center py-2 item-row"><span>A04 3/32GB</span><span class="font-bold text-base price">$225</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A04S 4/128GB</span><span class="font-bold text-base price">$260</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A06 4/128GB</span><span class="font-bold text-base price">$228</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A07 4/64GB</span><span class="font-bold text-base price">$245</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A07 4/128GB</span><span class="font-bold text-base price">$260</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A14 4/128GB</span><span class="font-bold text-base price">$255</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A16 4/128GB</span><span class="font-bold text-base price">$245</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A16 6/128GB</span><span class="font-bold text-base price">$290</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A16 (5G) 4/128GB</span><span class="font-bold text-base price">$270</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A16 (5G) 6/128GB</span><span class="font-bold text-base price">$325</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A16 (5G) 8/256GB</span><span class="font-bold text-base price">$345</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A17 (5G) 6/128GB</span><span class="font-bold text-base price">$340</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A17 (5G) 8/256GB</span><span class="font-bold text-base price">$345</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A25 (5G) 8/128GB</span><span class="font-bold text-base price">$345</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A26 (5G) 6/128GB</span><span class="font-bold text-base price">$335</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A26 (5G) 8/256GB</span><span class="font-bold text-base price">$340</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A34 (5G) 8/256GB</span><span class="font-bold text-base price">$405</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A35 (5G) 6/128GB</span><span class="font-bold text-base price">$400</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A35 (5G) 8/256GB</span><span class="font-bold text-base price">$445</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A36 (5G) 6/128GB</span><span class="font-bold text-base price">$380</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A36 (5G) 8/256GB</span><span class="font-bold text-base price">$400</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A55 (5G) 8/128GB</span><span class="font-bold text-base price">$485</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A55 (5G) 8/256GB</span><span class="font-bold text-base price">$515</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A56 (5G) 8/256GB</span><span class="font-bold text-base price">$470</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>A56 (5G) 12/256GB</span><span class="font-bold text-base price">$485</span></div>
+
+  <!-- Serie F -->
+  <div class="flex justify-between items-center py-2 item-row"><span>F15 (5G) 6/128GB</span><span class="font-bold text-base price">$285</span></div>
+
+  <!-- Serie S24 -->
+  <div class="flex justify-between items-center py-2 item-row"><span>S24 FE (5G) 8/256GB</span><span class="font-bold text-base price">$585</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S24 PLUS (5G) 12/256GB</span><span class="font-bold text-base price">$940</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S24 ULTRA 12/256GB</span><span class="font-bold text-base price">$945</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S24 ULTRA 12/512GB</span><span class="font-bold text-base price">$1,040</span></div>
+
+  <!-- Serie S25 -->
+  <div class="flex justify-between items-center py-2 item-row"><span>S25 12/128GB</span><span class="font-bold text-base price">$740</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S25 12/256GB</span><span class="font-bold text-base price">$800</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S25 PLUS 12/256GB</span><span class="font-bold text-base price">$910</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S25 PLUS 12/512GB</span><span class="font-bold text-base price">$960</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S25 ULTRA 12/256GB</span><span class="font-bold text-base price">$1,040</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S25 ULTRA 12/512GB</span><span class="font-bold text-base price">$1,145</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>S25 ULTRA 12/1TB</span><span class="font-bold text-base price">$1,225</span></div>
+
+  <!-- Serie Z -->
+  <div class="flex justify-between items-center py-2 item-row"><span>Z FLIP 7 FE (5G) 8/256GB</span><span class="font-bold text-base price">$900</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>Z FLIP 7 (5G) 12/512GB</span><span class="font-bold text-base price">$1,060</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>Z FOLD 7 (5G) 12/512GB</span><span class="font-bold text-base price">$1,795</span></div>
+
+</div>
+
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-center text-white mb-4">MOTOROLA</h3>
+                        <div class="bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+
+  <!-- Serie E -->
+  <div class="flex justify-between items-center py-2 item-row"><span>E14 2/64GB</span><span class="font-bold text-base price">$215</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>E15 2/64GB</span><span class="font-bold text-base price">$225</span></div>
+
+  <!-- Serie G -->
+  <div class="flex justify-between items-center py-2 item-row"><span>G04 4/128GB</span><span class="font-bold text-base price">$225</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G04 8/128GB</span><span class="font-bold text-base price">$245</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G05 4/128GB</span><span class="font-bold text-base price">$230</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G05 4/256GB</span><span class="font-bold text-base price">$260</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G14 4/128GB</span><span class="font-bold text-base price">$225</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G14 4/256GB</span><span class="font-bold text-base price">$265</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G15 4/128GB</span><span class="font-bold text-base price">$235</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G15 8/128GB</span><span class="font-bold text-base price">$250</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G15 4/512GB</span><span class="font-bold text-base price">$295</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G15 POWER 8/256GB</span><span class="font-bold text-base price">$300</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G23 4/128GB</span><span class="font-bold text-base price">$245</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G24 8/128GB</span><span class="font-bold text-base price">$245</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G24 4/256GB</span><span class="font-bold text-base price">$260</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G35 (5G) 8/256GB</span><span class="font-bold text-base price">$330</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G54 (5G) 4/128GB</span><span class="font-bold text-base price">$285</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G54 POWER (5G) 8/256GB</span><span class="font-bold text-base price">$295</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G54 POWER (5G) 12/256GB</span><span class="font-bold text-base price">$315</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G55 (5G) 8/256GB</span><span class="font-bold text-base price">$290</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G56 (5G) 8/256GB</span><span class="font-bold text-base price">$360</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G75 (5G) 8/256GB</span><span class="font-bold text-base price">$325</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G84 (5G) 8/256GB</span><span class="font-bold text-base price">$315</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G84 (5G) 12/256GB</span><span class="font-bold text-base price">$340</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>G85 (5G) 8/256GB</span><span class="font-bold text-base price">$330</span></div>
+
+  <!-- Serie Edge -->
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 30 (5G) 8/256GB</span><span class="font-bold text-base price">$355</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 50 NEO (5G) 8/256GB</span><span class="font-bold text-base price">$415</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 50 FUSION (5G) 8/256GB</span><span class="font-bold text-base price">$355</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 50 FUSION (5G) 12/512GB</span><span class="font-bold text-base price">$425</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 50 PRO (5G) 12/512GB</span><span class="font-bold text-base price">$565</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 50 ULTRA (5G) 16/1TB</span><span class="font-bold text-base price">$820</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 60 FUSION (5G) 12/256GB</span><span class="font-bold text-base price">$465</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 60 (5G) 8/256GB</span><span class="font-bold text-base price">$455</span></div>
+  <div class="flex justify-between items-center py-2 item-row"><span>EDGE 60 PRO (5G) 12/512GB</span><span class="font-bold text-base price">$690</span></div>
+
+</div>
+
+                    </div>
+                </div>
+                 <div class="text-center text-xs space-y-1 text-gray-400 mt-8"><p>¿Buscas otro modelo? ¡Pregúntanos! | Consulta por precios mayoristas a partir de 3 unidades.</p></div>
+            </section>
+
+
+<!--SECCIÓN NOTEBOOKS-->
+<section id="study" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">🖥️ Notebooks</h2>
+                <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col space-y-3">
+                        <!-- Asus -->
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Asus CX1 ChromeBook N4500</h3>
+    <p class="font-bold text-lg price mt-1">$360</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ 4GB RAM | 64GB eMMC | 14" FHD</p>
+      <p>🎨 Color: Silver</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Asus VivoBook E1504GA-WB31</h3>
+    <p class="font-bold text-lg price mt-1">$555</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ Core i3 N305 | 8GB RAM | 128GB USF | 15.6" FHD</p>
+      <p>💻 Windows 11 | Black</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Asus VivoBook GO I3-N305</h3>
+    <p class="font-bold text-lg price mt-1">$605</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ 8GB RAM | 128GB SSD | 15.6"</p>
+      <p>💻 Windows 11</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Asus VivoBook X1404VA-I712512</h3>
+    <p class="font-bold text-lg price mt-1">$840</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ Core i7-1355U | 16GB RAM | 512GB SSD | 14" FHD</p>
+      <p>💻 Windows 11 | QuietBlue</p>
+    </div>
+  </div>
+
+  <!-- Acer -->
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Acer ChromeBook 315 N6000</h3>
+    <p class="font-bold text-lg price mt-1">$390</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ 4GB RAM | 128GB eMMC | 15.6"</p>
+      <p>🎨 Color: Silver</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Acer ChromeBook CB315 N4020</h3>
+    <p class="font-bold text-lg price mt-1">$395</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ 4GB RAM | 128GB SSD | 15.6"</p>
+      <p>🎨 Color: Silver</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Acer A14-52MT-94H5</h3>
+    <p class="font-bold text-lg price mt-1">$1.285</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ Intel Core Ultra 9-288V | 32GB RAM | 1TB SSD | 14" Multi-Touch IPS WUXGA</p>
+      <p>💻 Windows 11</p>
+    </div>
+  </div>
+
+  <!-- HP -->
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">HP 15.6" FHD I5-1334U</h3>
+    <p class="font-bold text-lg price mt-1">$585</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ 8GB RAM | 512GB SSD | Silver</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">HP 15-FC0025DX</h3>
+    <p class="font-bold text-lg price mt-1">$675</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ AMD R5-7520U | 8GB RAM | 512GB SSD | 15.6" Touchscreen</p>
+      <p>💻 AMD Radeon Graphics | Windows 11 | Natural Silver</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">HP 15.6" AMD 7-7730U</h3>
+    <p class="font-bold text-lg price mt-1">$690</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ 16GB RAM | 512GB SSD | Silver</p>
+    </div>
+  </div>
+
+  <!-- Lenovo -->
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Lenovo IdeaPad Slim 3 15.6"</h3>
+    <p class="font-bold text-lg price mt-1">$595 - $755</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ AMD R5-7520U / R7-7730U | 8GB - 16GB RAM | 256GB - 512GB SSD | 15.6"</p>
+      <p>💻 Grey / Blue | Touchscreen opcional</p>
+    </div>
+  </div>
+
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Lenovo ThinkPad & Flex Series</h3>
+    <p class="font-bold text-lg price mt-1">$735 - $1.305</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ Core i5/i7 | Ryzen 5/7 | 8GB - 16GB RAM | 512GB SSD | 14" - 16" FHD/WUXGA</p>
+      <p>💻 Touchscreen opcional | Windows 10/11 Pro | Black / Arctic Grey</p>
+    </div>
+  </div>
+
+  <!-- Samsung -->
+  <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+    <h3 class="font-bold brand-title">Samsung Galaxy Book 4</h3>
+    <p class="font-bold text-lg price mt-1">$985</p>
+    <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+      <p>⚙️ Core i7-150U | 16GB RAM | 512GB SSD | 15.6" FHD</p>
+      <p>💻 Silver | Backlit Keyboard | Windows 11</p>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  function toggleDetails(selectedCard) {
+    const allDetails = document.querySelectorAll("#notebooks-gamer .details");
+    allDetails.forEach(d => {
+      if(d !== selectedCard.querySelector(".details")) d.classList.add("hidden");
+    });
+    const details = selectedCard.querySelector(".details");
+    details.classList.toggle("hidden");
+    selectedCard.classList.toggle("bg-[#F2F1EC]/20");
+  }
+</script>
+
+            <!--SECCIÓN NOTEBOOKS GAMER-->
+            <section id="notebooks" class="price-section hidden">
+                <h2 class="text-3xl font-bold text-center text-white mb-6">💻 Notebooks Gamer</h2>
+                <div class="max-w-2xl mx-auto bg-[#F2F1EC]/10 p-6 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex flex-col space-y-3">
+     
+<!-- HP Victus -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">HP Victus 15-FB2063DX</h3>
+      <p class="font-bold text-lg price mt-1">$735</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ Ryzen 5 7535HS | 8GB RAM | 512GB SSD</p>
+        <p>🎮 Radeon RX6550 4GB</p>
+        <p>💻 Pantalla 15.6” FHD | Windows 11</p>
+        <p>🎨 Color: Black</p>
+      </div>
+    </div>
+
+    <!-- Lenovo Gaming -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">Lenovo Gaming RTX2050</h3>
+      <p class="font-bold text-lg price mt-1">$815</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ Intel Core i5-12450HX | 8GB RAM | 512GB SSD</p>
+        <p>🎮 NVIDIA RTX 2050 4GB</p>
+        <p>💻 Full HD | Windows 11</p>
+      </div>
+    </div>
+
+    <!-- MSI A15 -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">MSI A15 B7VE Gaming</h3>
+      <p class="font-bold text-lg price mt-1">$970 - $1.165</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ Ryzen 5 7535HS | 8GB/16GB RAM | 512GB SSD</p>
+        <p>🎮 RTX 4050 6GB</p>
+        <p>💻 15.6” 144Hz IPS | Windows 11</p>
+        <p>⌨️ Teclado retroiluminado | Black</p>
+      </div>
+    </div>
+
+    <!-- Asus TUF -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">Asus TUF Gaming</h3>
+      <p class="font-bold text-lg price mt-1">$985</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ Ryzen 7 7435HS | 8GB RAM | 512GB SSD</p>
+        <p>🎮 RTX 3050 | 15.6” 144Hz | Windows 11</p>
+        <p>🎨 Graphite Black</p>
+      </div>
+    </div>
+
+    <!-- MSI Thin -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">MSI Thin 15</h3>
+      <p class="font-bold text-lg price mt-1">$1.175 - $1.315</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ i7-13620H / i5-13420H</p>
+        <p>🎮 RTX 4050 / RTX 4060 | 16GB RAM | 512GB SSD</p>
+        <p>💻 15.6” 144Hz FHD | Win 11</p>
+      </div>
+    </div>
+
+    <!-- Lenovo IdeaPad -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">Lenovo IdeaPad Gaming</h3>
+      <p class="font-bold text-lg price mt-1">$1.350</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ i7-13700H | 32GB RAM | 512GB SSD</p>
+        <p>🎮 RTX 4060 8GB | 15.6” 144Hz</p>
+        <p>💻 Windows 11</p>
+      </div>
+    </div>
+
+    <!-- HP Omen -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">HP Omen 16</h3>
+      <p class="font-bold text-lg price mt-1">$1.880</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ Intel i7-14650HX | 40GB RAM | 1TB SSD</p>
+        <p>🎮 RTX 4060 | 16.1” 144Hz FHD</p>
+        <p>🎨 Meteor Silver | Win 11</p>
+      </div>
+    </div>
+
+    <!-- Alienware -->
+    <div class="bg-[#F2F1EC]/10 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="toggleDetails(this)">
+      <h3 class="font-bold brand-title">Dell Alienware m18 R2</h3>
+      <p class="font-bold text-lg price mt-1">$3.680</p>
+      <div class="details hidden mt-2 text-gray-300 text-sm space-y-1">
+        <p>⚙️ i9-14900HX | 64GB DDR5 | 1TB SSD</p>
+        <p>🎮 RTX 4080 12GB</p>
+        <p>💻 18” 2.5K 165Hz | Win 11</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function toggleDetails(selectedCard) {
+    const allCards = document.querySelectorAll("#notebooks-gamer .details");
+    const allContainers = document.querySelectorAll("#notebooks-gamer > div > div");
+
+    allCards.forEach(detail => {
+      if (detail !== selectedCard.querySelector(".details")) {
+        detail.classList.add("hidden");
+      }
+    });
+
+    allContainers.forEach(card => {
+      if (card !== selectedCard) {
+        card.classList.remove("bg-[#F2F1EC]/20");
+      }
+    });
+
+    const details = selectedCard.querySelector(".details");
+    details.classList.toggle("hidden");
+    selectedCard.classList.toggle("bg-[#F2F1EC]/20");
+  }
+</script>
+
+            <!-- SECCIÓN SMART TVS -->
+            <section id="smart-tvs" class="price-section hidden">
+                 <h2 class="text-3xl font-bold text-center text-white mb-6">📺 Smart TVs Disponibles (Precios en ARS)</h2>
+                 <p class="text-center text-gray-300 mb-6 max-w-2xl mx-auto">¡Renová tu casa con la mejor tecnología!</p>
+                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 " >
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">AOC 32"</h3><p class="text-sm">ROKU TV</p><p class="font-bold text-lg price mt-1">$269.900</p></div>
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">Noblex 43"</h3><p class="text-sm">ANDROID TV</p><p class="font-bold text-lg price mt-1">$439.900</p></div>
+                   <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">TCL 43"</h3><p class="text-sm">ANDROID TV</p><p class="font-bold text-lg price mt-1">$474.900</p></div>
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">Samsung 43"</h3><p class="text-sm">UHD 4K</p><p class="font-bold text-lg price mt-1">$589.900</p></div>
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">Samsung 50"</h3><p class="text-sm">UHD 4K</p><p class="font-bold text-lg price mt-1">$744.900</p></div>
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">Philips 55"</h3><p class="text-sm">UHD LED</p><p class="font-bold text-lg price mt-1">$809.900</p></div>
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">Samsung 55"</h3><p class="text-sm">QLED 4K</p><p class="font-bold text-lg price mt-1">$1.119.000</p></div>
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">LG 75"</h3><p class="text-sm">UHD AI 4K</p><p class="font-bold text-lg price mt-1">$1.889.000</p></div>
+                    <div class="item-card text-center bg-[#F2F1EC]/10 p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"><h3 class="font-bold brand-title">Samsung 85”</h3><p class="text-sm">QLED 4K</p><p class="font-bold text-lg price mt-1">$4.399.000</p></div>
+                 </div>
+                 <div class="text-center text-xs space-y-1 text-red-300 bg-red-900 bg-opacity-30 p-3 rounded-lg mt-8 max-w-lg mx-auto">
+                    <p class="font-bold">⚠️ IMPORTANTE:</p>
+                    <p>Garantías oficiales de TVs cubren defectos de fábrica y se gestionan directamente con la marca.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- 4. Pie de Página -->
+        <footer class="text-center pt-12 mt-8 border-t border-gray-700">
+            <p class="text-xl font-bold text-white">¡Gracias por elegir TecnoPoint SG!</p>
+            <a href="https://www.instagram.com/tecnopoint.sg" target="_blank" class="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">@tecnopoint.sg</a>
+            <p class="text-xs text-gray-500 mt-4">Precios en dólares (USD) o pesos (ARS) según se indique. Sujetos a cambios sin previo aviso.</p>
+        </footer>
+    </div>
+
+    <script>
+        const navButtons = document.querySelectorAll('.nav-button');
+        const priceSections = document.querySelectorAll('.price-section');
+        
+        // --- Lógica de Navegación ---
+        navButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Ocultar todas las secciones y quitar clase activa de botones
+                priceSections.forEach(section => section.classList.add('hidden'));
+                navButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Mostrar la sección correcta y activar el botón
+                const targetId = button.dataset.target;
+                document.getElementById(targetId).classList.remove('hidden');
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
